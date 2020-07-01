@@ -2,17 +2,95 @@
 ************* GENERAL SETTINGS *************
 *********************************************/
 
-.container, .container2 {
+body{
+    background-image        : url("../img/asfalt-dark.png");
+    background-color        :rgba(230, 246, 255, 0.194);
+}
+
+.container{
+    max-width               : 700px;
+    margin                  : auto;
+}
+
+.container1, .container2 {
     position                : relative;
-    width                   : 50% 
+}
+
+h2{
+    text-align              : center;
+}
+
+a{
+    text-decoration         : none;
+    color                   : white;
+}
+
+a:hover{
+    text-decoration         : none;
+    color                   : rgb(76, 140, 175);
+}
+
+/********************************************
+******************* TYPOS *******************
+*********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Ramabhadra&display=swap');
+
+/*
+    font-family              : 'Inconsolata', monospace;
+    font-family              : 'Ramabhadra' , sans-serif;
+*/
+
+h2, h3, p{
+    font-family              : 'Inconsolata', monospace;
+    font-weight              : 200;
+}
+
+img{
+    border-radius            : 30px;
+}
+
+/********************************************
+******************* HEADER ******************
+*********************************************/
+
+header{
+    margin-bottom           : 100px;
+}
+
+header h1{
+    text-align              : center;
+    font-family             : 'Ramabhadra' , sans-serif;
+    letter-spacing          : 4px;    
+    font-size               : 60px;
+}
+
+/********************************************
+******************** MAIN ******************
+*********************************************/
+
+main h2{
+    margin-bottom           : 40px;
+}
+
+/********************************************
+******************* FOOTER ******************
+*********************************************/
+
+footer{
+    margin-top              : 100px;
+    color                   : white;
+    background              : rgb(30, 29, 29);
+    padding                 : 2px 0 2px 0; 
+    
 }
 
 /********************************************
 ************** OVERLAY EFFECT 1 *************
 *********************************************/
 
-.container{ 
-    margin-bottom           : 30px;
+.container1{ 
+    margin-bottom           : 40px;
 }
   
 .img1{
@@ -20,8 +98,8 @@
     display                 : block;
     width                   : 100%;
     height                  : auto;
-    transition              : .5s ease;
-    backface-visibility: hidden;
+    backface-visibility     : hidden;
+    border-radius           : 30px;
 }
   
 .call-to-action{
@@ -34,12 +112,16 @@
     text-align              : center;
 }
   
-.container:hover .img1{
-    opacity                 : 0.3;
-    background-color        : rgba(0, 0, 0, 0.139);
+.container1:hover .img1{
+    opacity                 : 0.7;
+    transition              : .5s ease;
+}
+
+.container1:hover{
+    border-radius           : 30px;
 }
   
-.container:hover .call-to-action{
+.container1:hover .call-to-action{
     opacity                 : 1;
 }
   
@@ -48,6 +130,7 @@
     color                   : white;
     font-size               : 16px;
     padding                 : 16px 32px;
+    border-radius           : 10px;
 }
 
 /********************************************
@@ -71,6 +154,7 @@
     opacity                 : 0;
     transition              : .5s ease;
     background-color        : rgba(76, 140, 175, 0.5);
+    border-radius           : 30px;
 }
 
 .container2:hover .overlay {
